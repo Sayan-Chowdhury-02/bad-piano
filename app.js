@@ -59,6 +59,7 @@ noteE.addEventListener("click",
 function(){
     sound3.currentTime = 0
     sound3.play()
+    sound3.volume = 0.5;
 }
 )
 document.addEventListener("keydown",
@@ -73,6 +74,130 @@ function(event){
             setTimeout(() => {
                 noteE.style.backgroundColor = 'white'
             }, 150);
+            
         }}
+    }
+)
+var sound4 = new Audio('soundEffects/c6-102822.mp3')
+noteR.addEventListener("click", 
+function(){
+    sound4.currentTime = 0
+    sound4.play()
+}
+)
+document.addEventListener("keydown",
+function(event){
+
+    if (event.keyCode == 82){
+        sound4.currentTime = 0;
+        sound4.play();
+        sound4.volume = 0.7;
+    }
+    }
+)
+
+var sound5 = new Audio('soundEffects/e6-82016.mp3')
+noteT.addEventListener("click", 
+function(){
+    sound5.currentTime = 0
+    sound5.play()
+}
+)
+document.addEventListener("keydown",
+function(event){
+
+    if (event.keyCode == 84){
+        sound5.currentTime = 0;
+        sound5.play();
+        // sound5.volume = 0.7;
+    }
+    }
+)
+var sound6 = new Audio('soundEffects/f6-102819.mp3')
+noteY.addEventListener("click", 
+function(){
+    sound6.currentTime = 0
+    sound6.play()
+}
+)
+document.addEventListener("keydown",
+function(event){
+
+    if (event.keyCode == 89){
+        sound6.currentTime = 0;
+        sound6.play();
+        // sound5.volume = 0.7;
+    }
+    }
+)
+var sound7 = new Audio('soundEffects/g6-82013.mp3')
+noteU.addEventListener("click", 
+function(){
+    sound7.currentTime = 0
+    sound7.play()
+}
+)
+document.addEventListener("keydown",
+function(event){
+
+    if (event.keyCode == 85){
+        sound7.currentTime = 0;
+        sound7.play();
+        // sound5.volume = 0.7;
+    }
+    }
+)
+
+var sound8 = new Audio('soundEffects/la-80237.mp3')
+
+noteI.addEventListener("click", 
+function(){
+    sound8.play()
+    sound8.currentTime = 1
+}
+)
+document.addEventListener('keydown',
+function(event){
+if (event.keyCode == 73){
+
+        sound8.play()
+        sound8.currentTime = 1
+    }
+    }
+)
+
+var sound9 = new Audio('soundEffects/mi-80239.mp3')
+
+noteO.addEventListener('click', 
+    function(){
+        sound9.play()
+        sound9.currentTime = 1
+    }
+)
+document.addEventListener('keydown',
+    function(event){
+        if (event.keyCode == 79){
+            sound9.play()
+            sound9.currentTime = 1;
+        }
+    }
+)
+
+var sound10 = new Audio('soundEffects/piano-g-6200.mp3')
+
+noteP.addEventListener('click',
+    function(){
+        sound10.play()
+        sound10.currentTime = 0;
+    }
+)
+document.addEventListener(
+    'keydown',
+    function(event){
+        if (event.keyCode == 80){
+            sound10.play()
+            sound10.currentTime = 0
+            sound10.volume = 0.25
+        }
     }
 )
