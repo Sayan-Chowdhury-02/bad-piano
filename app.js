@@ -22,7 +22,12 @@ function forBlack(){
         noteQ.style.backgroundColor = 'black'
     }, 150);
 }
-
+function forWhite(){
+    noteW.style.backgroundColor = '#181818'
+    setTimeout(() => {
+        noteW.style.backgroundColor = 'white'
+    }, 150);
+}
 // white
 // Add event listener to the document for the "keydown" event
 document.addEventListener("keydown", function(event) {
@@ -31,6 +36,7 @@ document.addEventListener("keydown", function(event) {
         sound1.currentTime = 0; // Reset the audio to the beginning
         sound1.play(); // Play the audio
         forBlack()
+        
     }
 });
 // black
@@ -45,5 +51,28 @@ document.addEventListener("keydown", function(event) {
     if (event.keyCode == 87) {
         sound2.currentTime = 0; // Reset the audio to the beginning
         sound2.play(); // Play the audio
+        forWhite()
     }
 });
+var sound3 = new Audio('soundEffects/c3-95007.mp3')
+noteE.addEventListener("click", 
+function(){
+    sound3.currentTime = 0
+    sound3.play()
+}
+)
+document.addEventListener("keydown",
+function(event){
+
+    if (event.keyCode == 69){
+        sound3.currentTime = 0;
+        sound3.play();
+        sound3.volume = 0.1
+        function forWhite2(){
+            noteE.style.backgroundColor = '#181818'
+            setTimeout(() => {
+                noteE.style.backgroundColor = 'white'
+            }, 150);
+        }}
+    }
+)
